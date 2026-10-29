@@ -23,20 +23,7 @@ services:
         sync: false
       - key: DB_NAME
         value: taskmate
-      - key: APP_URL
-        sync: false
-      - key: SMTP_HOST
-        sync: false
-      - key: SMTP_PORT
-        value: "587"
-      - key: SMTP_SECURE
-        value: "false"
-      - key: SMTP_USER
-        sync: false
-      - key: SMTP_PASSWORD
-        sync: false
-      - key: SMTP_FROM
-        sync: false
+
       - key: BREVO_API_KEY
         sync: false
       - key: BREVO_SENDER_EMAIL
