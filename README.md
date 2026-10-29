@@ -61,7 +61,7 @@ Deadlines are currently stored and compared in UTC. The dashboard considers a ta
 
 ### MySQL
 
-Provision a persistent hosted MySQL database separately. Import `database/schema.sql`, then copy its host, port, database, username, and password into the Render service environment. Never place these values in the frontend or commit `.env` files.
+Provision a hosted MySQL-compatible database separately. TiDB Cloud Starter is one option for a student demo and has a free usage quota; its public endpoint requires TLS. Import `database/schema.sql`, then set the database host, port, name, username, and password in the Render service environment. Set `DB_SSL=true` for database providers that require TLS (and use the provider-assigned port); leave it `false` for local XAMPP. Never place database credentials in the frontend or commit `.env` files.
 
 ### Render API
 
